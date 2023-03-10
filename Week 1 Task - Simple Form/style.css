@@ -1,0 +1,24 @@
+body  {
+    background-color: crimson; 
+    /* padding: 20px;
+    margin: 50px; */
+    font-family: 'Times New Roman';
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+input {
+    border: 5px;
+    border-radius: 4px;
+    bottom: 4px;
+    padding: 7px;
+    width: 250px;
+}
+
+button {
+    padding: 7px;
+    margin: 2px; 
+    text-align: center;
+    border: 15px;
+    border-radius: 7px;
+}

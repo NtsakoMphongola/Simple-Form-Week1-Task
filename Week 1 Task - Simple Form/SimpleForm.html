@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Form</title>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+<body>
+    <script type="text/javascript">
+        function validate(){
+            var mail = document.getElementById("email").value;
+            var regx = /^([a-zA-z0-9\._]+)@([a-zA-z0-9])+.([a-z]+)(.[a-z]+)?$/
+            if(regx.email(mail)) {
+                alert("Successful submission")
+                return true
+            }
+            else {
+                alert("Unsuccessful submission")
+                return false;
+            }
+        }
+    </script>
+    <form method="post">
+        <fieldset>
+            <legend style="color: rgb(34, 45, 139); text-align: left;">Fill in your details.</legend> <br>
+            <label for="FullName">Name:</label> <br>
+            <input type="text" id="FullName" placeholder="Enter your name" > <br>
+            <label for="Phone">Phone Number:</label> <br>
+            <input type="tel" id="phnone" placeholder="Enter your contact" > <br>
+            <label for="Email">Email Address:</label> <br>
+            <input type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email"> <br>
+            <label for="male">Male:</label>
+            <input type="radio" id="sex" name="Male"><br>
+            <label for="female">Female:</label>
+            <input type="radio" id="sex" name="Female"> <br> </br>
+            <input type="button" value="Submit" onclick="validate()"> 
+        </fieldset>
+       
+    </form>
+</body>
+</html>
